@@ -7,3 +7,15 @@ jobs:
     steps:
     - name: Echo Hello, World!
       run: echo "Hello, World!"
+      
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo Hello, World!
+      run: echo "Hello, World! Test"
+  
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo Hello, World!
+      run: echo "Hello, World!Production"
