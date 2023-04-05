@@ -10,12 +10,14 @@ jobs:
       
   test:
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
     - name: Echo Hello, World!
       run: echo "Hello, World! Test"
   
   prod:
     runs-on: ubuntu-latest
+    needs: [test]
     steps:
     - name: Echo Hello, World!
       run: echo "Hello, World!Production"
