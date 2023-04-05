@@ -15,7 +15,7 @@ Resources:
   MyFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      CodeUri: sam_IoT_lambda/
+      CodeUri: .
       Handler: lambda_function.lambda_handler
       Runtime: python3.7
       Description: My Lambda function
